@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='icon' type='images/png'href='images/TitleLogo.png'>
+	<title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
+
+	<link rel="stylesheet" href="mainStyle.css">
+	<link rel="stylesheet" href="bxSlider.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+  	<script src="bxSlider.js"></script>
+  	<script src="mainScript.js"></script>
+
+</head>
+<body style="overflow-x: hidden;">
+	<header>
+		<div id="headNav">
+			<a id="headBtn"href="#">
+				<span>수도권 이외 지역 </span>
+				<b> 택배배송 〉 </b>
+			</a>
+			<ul>
+				<li> <a href="#">&nbsp 회원가입 &nbsp </a></li>
+				<li> | </li>
+				<li> <a href="#">&nbsp 로그인 &nbsp </a></li>
+				<li> | </li>
+				<li> <a href="#" id="serviceCenter">&nbsp 고객센터 ▼ &nbsp </a>
+				</li>
+				<li> | </li>
+				<li> <a href="#">&nbsp 배송지역 검색 &nbsp</a></li>
+			</ul>
+		</div>
+		<div class="drawer">
+			<ul>
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">자주하는 질문</a></li>
+				<li><a href="#">1:1 문의</a></li>
+				<li><a href="#">상품제안</a></li>
+				<li><a href="#">에코포장 피드백</a></li>
+			</ul>
+		</div>
+		<div id="headLogo"><img src="images/MainLogo.png" width="100px" align="center"></div>
+		<nav>
+			<div>
+				<ul>
+					<li id="category"> 
+						<img  src="images/menu.png" width="15px">
+						<a href="#">전체 카테고리</a>
+					</li>
+					<li> | </li>
+					<li> 
+						<a href="#">신상품</a>
+					</li>
+					<li> | </li>
+					<li> 
+						<a href="#">베스트</a>
+					</li>
+					<li> | </li>
+					<li> 
+						<a href="#">알뜰쇼핑</a>
+					</li>
+					<li> | </li>
+					<li> 
+						<a href="#">이벤트</a>
+					</li>
+				</ul>
+				<div id="search">
+					<input type="text" value="든든한 아침 식사로 시작하는 하루"style="border:none;width: 160px; background-color: rgb(240,240,240);text-align: center;float: left;">
+					<input type="image" src="images/search.png" width="30px"border="0" style="float: right;margin-top: -10px;">
+					
+				</div>
+				
+			</div>
+			<div id="cart">
+				<a href=""><img  src="images/cart.png" width="30px"></a>
+			</div>
+		</nav>
+		<div id="menuD"style="overflow-x: hidden;">
+				<ul>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/eve.png" width="24px">
+							<span>추석 선물세트</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">3만원 미만</a></li>
+							<li><a href="#">3~5만원</a></li>
+							<li><a href="#">5~10만원</a></li>
+							<li><a href="#">10~20만원</a></li>
+							<li><a href="#">20만원 이상</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/veg.png" width="24px">
+							<span>채소</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">기본채소</a></li>
+							<li><a href="#">쌈·샐러드·간편채소</a></li>
+							<li><a href="#">브로콜리·특수채소</a></li>
+							<li><a href="#">콩나물·버섯류</a></li>
+							<li><a href="#">시금치·부추·나물</a></li>
+							<li><a href="#">양파·마늘·생강·파</a></li>
+							<li><a href="#">파프리카·피망·고추</a></li>
+						</ul>
+					</li>
+					
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/fru.png" width="24px">
+							<span>과일·견과·쌀</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">제철과일</a></li>
+							<li><a href="#">국산과일</a></li>
+							<li><a href="#">수입과일</a></li>
+							<li><a href="#">냉동·건과일</a></li>
+							<li><a href="#">견과류</a></li>
+							<li><a href="#">쌀·잡곡</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/fis.png" width="24px">
+							<span>수산·해산·건어물</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">생선류</a></li>
+							<li><a href="#">오징어·낙지·문어</a></li>
+							<li><a href="#">새우·게·랍스터</a></li>
+							<li><a href="#">해산물·조개류</a></li>
+							<li><a href="#">수산가공품</a></li>
+							<li><a href="#">김·미역·해조류</a></li>
+							<li><a href="#">건어물·다시팩</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/mea.png" width="24px">
+							<span>정육·계란</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">소고기</a></li>
+							<li><a href="#">돼지고기</a></li>
+							<li><a href="#">계랸류</a></li>
+							<li><a href="#">닭·오리고기</a></li>
+							<li><a href="#">양념육·돈까스</a></li>
+							<li><a href="#">양고기</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/mai.png" width="24px">
+							<span>국·반찬·메인요리</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">국·탕·찌개</a></li>
+							<li><a href="#">밑반찬</a></li>
+							<li><a href="#">김치·장아찌·젓갈</a></li>
+							<li><a href="#">두부·어묵·부침개</a></li>
+							<li><a href="#">햄·소시지·통조림</a></li>
+							<li><a href="#">메인요리</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/sal.png" width="24px">
+							<span>샐러드·간편식</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">샐러드·도시락</a></li>
+							<li><a href="#">간편식·냉동식품</a></li>
+							<li><a href="#">밥류·면식품·즉석식품</a></li>
+							<li><a href="#">선식·시리얼·그래놀라</a></li>
+							<li><a href="#">만두·튀김·떡볶이</a></li>
+							<li><a href="#">죽·스프</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/oil.png" width="24px">
+							<span>면·양념·오일</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">파스타·면류</a></li>
+							<li><a href="#">밀가루·가루·믹스</a></li>
+							<li><a href="#">향신료·소스·드레싱</a></li>
+							<li><a href="#">양념·액젓·장류</a></li>
+							<li><a href="#">소금·설탕·식초·꿀</a></li>
+							<li><a href="#">식용유·참기름·오일</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/jui.png" width="24px">
+							<span>음료·우유·떡·간식</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">생수·음료·주스</a></li>
+							<li><a href="#">커피·차</a></li>
+							<li><a href="#">우유·두유·요거트</a></li>
+							<li><a href="#">아이스크림</a></li>
+							<li><a href="#">떡·한과</a></li>
+							<li><a href="#">간식·과자·쿠키</a></li>
+							<li><a href="#">초콜릿·젤리·캔디</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/che.png" width="24px">
+							<span>베이커리·치즈·델리</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">식빵·빵류</a></li>
+							<li><a href="#">잼·버터·스프레드</a></li>
+							<li><a href="#">케이크·파이·디저트</a></li>
+							<li><a href="#">치즈</a></li>
+							<li><a href="#">건조육</a></li>
+							<li><a href="#">올리브·피클·델리</a></li>						
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/hea.png" width="24px">
+							<span>건강식품</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">건강즙·건강음료</a></li>
+							<li><a href="#">홍삼·인삼·꿀</a></li>
+							<li><a href="#">영양제</a></li>
+							<li><a href="#">유산균</a></li>
+							<li><a href="#">건강분말·건강환</a></li>
+							<li><a href="#">유아동</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/liv.png"width="24px">
+							<span>생활용품·리빙</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">휴지·티슈·위생용품</a></li>
+							<li><a href="#">세제·청소용품</a></li>
+							<li><a href="#">화훼·인테리어소품</a></li>
+							<li><a href="#">의약외품·마스크</a></li>
+							<li><a href="#">생활잡화·문구</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/bea.png"width="24px">
+							<span>뷰티·바디케어</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">스킨케어</a></li>
+							<li><a href="#">구강·면도</a></li>
+							<li><a href="#">바디·제모</a></li>
+							<li><a href="#">헤어케어</a></li>
+							<li><a href="#">미용기기·소품</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/kit.png"width="24px">
+							<span>주방용품</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">주방소모품</a></li>
+							<li><a href="#">주방·조리도구</a></li>
+							<li><a href="#">냄비·팬류</a></li>
+							<li><a href="#">식기류</a></li>
+							<li><a href="#">컵·와인잔·사케잔</a></li>
+							<li><a href="#">차·커피도구</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/ele.png"width="24px">
+							<span>가전제품</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">주방가전</a></li>
+							<li><a href="#">생활가전</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/bab.png"width="24px">
+							<span>베이비·키즈</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">분유·간편 이유식</a></li>
+							<li><a href="#">이유식 재료</a></li>
+							<li><a href="#">유아·어린이 음식</a></li>
+							<li><a href="#">간식·음료·건강식품</a></li>
+							<li><a href="#">유아용품·젖병·식기류</a></li>
+							<li><a href="#">기저귀·물티슈</a></li>
+							<li><a href="#">목욕·세제·위생용품</a></li>
+							<li><a href="#">유아스킨·구강케어</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/pet.png"width="24px">
+							<span>반려동물</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">강아지 간식</a></li>
+							<li><a href="#">강아지 주식</a></li>
+							<li><a href="#">고양이 간식</a></li>
+							<li><a href="#">고양이 주식</a></li>
+							<li><a href="#">반려동물 용품</a></li>
+							<li><a href="#">배변·위생</a></li>
+						</ul>
+					</li>
+					<li class="mainMenu">
+						<a href="#">
+							<img src="images/category/best.png"width="24px">
+							<span>컬리의 추천</span>
+						</a>
+						<ul class="subMenu">
+							<li><a href="#">준비 중</a>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+	</header>
+
+
+	<section>
+
+		<ul class="bx">
+
+    		<li><a href="#"><img src="images/bx/bx1.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx2.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx3.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx4.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx5.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx6.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx7.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx8.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx9.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx10.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx11.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx12.png"/></a></li>
+    		<li><a href="#"><img src="images/bx/bx13.png"/></a></li>
+
+		</ul>
+
+	</section>
+	<content>
+		<aside>
+			<img src="images/promote.png"width="80px">
+			<span>
+				<a href="#">등급별 후기</a>
+				<a href="#">레시피</a>
+				<a href="#">베스트 후기</a>
+				<a id="goTop" href="#top"><img src="images/top.png" width="50px"></a>
+			</span>
+
+		</aside>
+		<article>
+			<div id="con1">
+
+				<h2>이 상품 어때요?</h2>
+
+				<div>
+					<a href="#">
+						<img src="images/item/1.png"width="250px" height="320px"><br>[고메] 중화 짜장 <br> 
+					</a>
+					6,282원
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/2.png"width="250px" height="320px"><br>[KF365] 햇 감자 1kg <br> 
+					</a>
+					2,380원
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/3.png"width="250px" height="320px"><br>[오뚜기] 컵누들 8종<br> 
+					</a>
+					990원
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/4.png"width="250px" height="320px"><br>[마이카인드] 유기농 맘스 멀티 비타민 <br> 
+					</a>
+					66,263원
+				</div>
+			</div>
+
+			<div id="con2">
+
+				<h2>이벤트 소식 〉</h2>
+
+				<div>
+					<a href="#">
+						<img src="images/item/5.png"width="338px" height="338px"><br>제로 베이커리 최대 15% 할인<br>
+					</a>
+					<a href="#">설탕과 밀가루를 쓰지 않는 빵</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/6.png"width="338px" height="338px"><br>문경 오미자 모음전<br>
+					</a>
+					<a href="#">집에서 즐기는 문경 오미자 축제</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/7.png"width="338px" height="338px"><br>맛의 고수 모음전<br>
+					</a>
+					<a href="#">실패 없는 맛의 진수</a>
+				</div>
+			</div>
+
+			<div id="con3">
+				<h2>알뜰 상품 〉</h2>
+				<div>
+					<a href="#">
+						<img src="images/item/8.png"width="250px" height="320px"><br>[폰티] 선드라이드 토마토 <br> 
+					</a>
+					7,650원
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/9.png"width="250px" height="320px"><br>[my first] 처음만나는 진짜 모닝롤 <br> 
+					</a>
+					4,085원
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/10.png"width="250px" height="320px"><br>[해화당] 갈비만두<br> 
+					</a>
+					4,720원
+				</div>
+				<div>
+					<a href="#">
+						<img src="images/item/11.png"width="250px" height="320px"><br>[실리만] 실리콘 수세미 5종 <br> 
+					</a>
+					8,100원
+				</div>
+			</div>
+			
+		</article>
+	</content>
+	<footer>
+		<img src="images/footer/footer.png" height="164.5px">
+		<div id="firstFooter">
+			<h3>고객행복센터</h3>
+			<div id="leftF">
+				<h2>1644-1107</h2>
+				<a href="#"><div>카카오톡 문의</div></a>
+				<a href="#"><div>1:1 문의</div></a>
+			</div>
+			<div id="rightF">
+				<p>365 고객센터</p>
+				<span>오전 7시 - 오후 7시</span>
+				<p>365 고객센터</p>
+				<span>오전 7시 - 오후 7시</span>
+				<p>24시간 접수 가능</p>
+				<span>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</span>
+			</div>
+		</div>
+		<div id="secondFooter">
+			<div class="company">
+				<ul class="list">
+					<li><a href="#">컬리소개</a></li>
+					<li><a href="#">컬리소개영상</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이용안내</a></li>
+				</ul>
+				<br><br><br>
+				<p>
+					법인명 (상호) : 주식회사 컬리 | 사업자등록번호 : 261-81-23567 <a href="#">사업자정보 확인</a>
+					<br>
+					통신판매업 : 제 2018-서울강남-01646 호 | 개인정보보호책임자 : 이원준
+					<br>
+					주소 : 서울시 도산대로 16길 20, 이래빌딩 B1 ~ 4F | 대표이사 : 김슬아
+					<br>
+					입점문의 : <a href="#">입점문의하기</a> | 제휴문의 : <a href="#">business@kurlycorp.com</a>
+					<br>
+					채용문의 : <a href="#">recruit@kurlycorp.com</a>
+					<br>
+					팩스: 070 - 7500 - 6098 | 이메일 : <a href="#">help@kurlycorp.com</a>
+					<br>
+					© KURLY CORP. ALL RIGHTS RESERVED
+				</p>
+
+			</div>
+		</div>
+		<div id="thirdFooter">
+			<ul>
+				<li>
+					<a href="#" ><img src="images/footer/insta.png" width="30px"></a>
+				</li>
+				<li>
+					<a href="#" ><img src="images/footer/fb.png"width="30px"></a>
+				</li>
+				<li>
+					<a href="#" ><img src="images/footer/blog.png"width="30px"></a>
+				</li>
+				<li>
+					<a href="#" ><img src="images/footer/post.png"width="30px"></a>
+				</li>
+				<li>
+					<a href="#" ><img src="images/footer/youtube.png"width="30px"></a>
+				</li>
+			</ul>
+		</div>
+		<div id="foot"><hr><img src="images/footer/footer2.png" width="1000px"></div>
+	</footer>
+	
+</body>
+</html>
